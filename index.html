@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Rock Garden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>⛰️ Zen Rock Garden</h1>
+      <p class="subtitle">Rake the gravel. Arrange the stones. Listen.</p>
+    </header>
+
+    <div id="garden-container">
+      <canvas id="garden"></canvas>
+      <div id="rocks-container"></div>
+    </div>
+
+    <div id="controls">
+      <button id="rake-mode" class="mode-btn active">🌪️ Rake</button>
+      <button id="rock-mode" class="mode-btn">🪨 Place Rocks</button>
+      <button id="clear-btn">🗑️ Clear</button>
+      <button id="quote-btn">💬 Wisdom</button>
+    </div>
+
+    <div id="quote-display" class="hidden">
+      <p id="quote-text"></p>
+      <button id="quote-close">×</button>
+    </div>
+
+    <footer>
+      <p>Drag to rake • Switch to rock mode to click and place stones • Click rocks to move them</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
